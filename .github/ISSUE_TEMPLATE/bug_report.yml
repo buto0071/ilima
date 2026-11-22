@@ -1,0 +1,29 @@
+name: Bug Report
+description: Report a bug in Ilima
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Clear description of the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware, Network & Runtime
+      placeholder: |
+        - Coordinator OS & GPU: (e.g., Windows 11, AMD RX 9070 XT 16 GB)
+        - Worker OS & GPU: (e.g., Windows 11, NVIDIA RTX 5050 8 GB)
+        - Network link: (e.g., 1 Gbps Ethernet / Wi-Fi)
+        - llama.cpp build tag on both nodes: (e.g., b12503)
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce & Redacted Config/Logs
+      description: Paste your ilima.json (redact personal paths/IPs) and relevant stdout/stderr logs.
+    validations:
+      required: true
