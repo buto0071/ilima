@@ -1,0 +1,5 @@
+{
+  "llama_bin_dir": "./runtime",
+  "use_wsl": false,
+  "rpc_port": 50052
+}

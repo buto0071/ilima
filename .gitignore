@@ -1,0 +1,37 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Node / dashboard build output
+node_modules/
+dist/
+ilima-dashboard/out/
+
+# Local configs & secrets (only *.example.json are public)
+ilima.json
+.env
+.env.*
+*.local.json
+*.local.toml
+
+# Runtime data, models, binaries, logs
+.ilima/
+/runtime/
+/models/
+/release_bundle/
+*.gguf
+*.bin
+*.log
+tokenizer.json
+*.tokenizer.json
+llama-server*
+rpc-server*
+download_*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.code-workspace

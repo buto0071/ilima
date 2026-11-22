@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "ilima",
+    "ilima-core",
+    "ilima-wasm",
+]
+resolver = "2"

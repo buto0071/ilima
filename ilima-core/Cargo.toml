@@ -1,0 +1,9 @@
+[package]
+name = "ilima-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+libp2p = { version = "0.53", features = ["serde"] }

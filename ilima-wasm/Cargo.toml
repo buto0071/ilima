@@ -1,0 +1,13 @@
+[package]
+name = "ilima-wasm"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+libp2p = { version = "0.53", features = ["wasm-bindgen", "websocket-websys", "gossipsub", "noise", "yamux", "macros"] }
+ilima-core = { path = "../ilima-core" }
